@@ -2,6 +2,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { HashLocationStrategy, LocationStrategy } from "@angular/common";
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -31,7 +32,11 @@ import { HeroSearchComponent } from './hero-search.component'
         HeroesComponent,
         HeroSearchComponent
     ],
-    providers: [HeroService],
+    providers: [HeroService,
+        {
+            provide: LocationStrategy,
+            useClass: HashLocationStrategy
+        }],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
