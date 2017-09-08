@@ -73,6 +73,8 @@
     <Content Include="src\app\dashboard.component.html" />
     <Content Include="src\app\hero-detail.component.css" />
     <Content Include="src\app\hero-detail.component.html" />
+    <Content Include="src\app\hero-search.component.css" />
+    <Content Include="src\app\hero-search.component.html" />
     <Content Include="src\app\heroes.component.css" />
     <Content Include="src\app\heroes.component.html" />
     <Content Include="src\systemjs.config.js" />
@@ -96,12 +98,14 @@
     <TypeScriptCompile Include="src\app\app-routing.module.ts" />
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\dashboard.component.ts" />
+    <TypeScriptCompile Include="src\app\hero-search.component.ts" />
+    <TypeScriptCompile Include="src\app\hero-search.service.ts" />
     <TypeScriptCompile Include="src\app\heroes.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
     <TypeScriptCompile Include="src\app\hero-detail.component.ts" />
     <TypeScriptCompile Include="src\app\hero.service.ts" />
     <TypeScriptCompile Include="src\app\hero.ts" />
-    <TypeScriptCompile Include="src\app\mock-heroes.ts" />
+    <TypeScriptCompile Include="src\app\in-memory-data-service.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
